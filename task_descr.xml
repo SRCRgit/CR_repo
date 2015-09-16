@@ -1,0 +1,6 @@
+#!/bin/bash
+form_str="-F vin=YV1SW654261541561 -F type=SWDL -F task_description=@/home/s23028/Basim/git_checkout_folder/task_descr.xml -F data_file1=@/home/s23028/Basim/git_checkout_folder/ecusw.vbf"
+URL="http://srcr.alkit.se:8080/srcr/createtask"
+params=""
+echo "will run curl ${form_str} ${URL}${param}"
+curl ${form_str} "${URL}${param}"
